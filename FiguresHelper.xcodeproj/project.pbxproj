@@ -11,6 +11,7 @@
 		BB69F8C32757C48F00550FA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB69F8C22757C48F00550FA9 /* ContentView.swift */; };
 		BB69F8C52757C49C00550FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB69F8C42757C49C00550FA9 /* Assets.xcassets */; };
 		BB69F8C82757C49C00550FA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB69F8C72757C49C00550FA9 /* Preview Assets.xcassets */; };
+		BB69F8CF2757C72900550FA9 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB69F8CE2757C72900550FA9 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BB69F8C22757C48F00550FA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB69F8C42757C49C00550FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB69F8C72757C49C00550FA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB69F8CE2757C72900550FA9 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				BB69F8C22757C48F00550FA9 /* ContentView.swift */,
 				BB69F8C42757C49C00550FA9 /* Assets.xcassets */,
 				BB69F8C62757C49C00550FA9 /* Preview Content */,
+				BB69F8CE2757C72900550FA9 /* CircleView.swift */,
 			);
 			path = FiguresHelper;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB69F8CF2757C72900550FA9 /* CircleView.swift in Sources */,
 				BB69F8C32757C48F00550FA9 /* ContentView.swift in Sources */,
 				BB69F8C12757C48F00550FA9 /* FiguresHelperApp.swift in Sources */,
 			);

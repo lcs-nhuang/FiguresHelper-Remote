@@ -35,6 +35,10 @@ struct ContentView: View {
                         Text("100")
             })
             
+            Text("Area")
+            
+            Text("YOU")
+            
        Spacer()
         }
     }

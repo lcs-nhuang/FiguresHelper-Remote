@@ -13,8 +13,10 @@
             //radius is the name
             //Double is the data type
             //By adding = 15.00 we are just providing a default value
-            
-            var radius: Double = 15.00
+            // Input - we need this from the user
+            //We want SwiftUI to update the user interface based on  what the user selects.
+            //To do this, we use a special piece
+            @State var radius: Double = 15.00
             
             //MARK: Computer properties
             var area: Double {
@@ -22,7 +24,7 @@
             }
             
             // User interface
-            var body: some View {
+           var body: some View {
                 VStack(alignment: .leading, spacing: 20) {
                     
                     // Input
@@ -40,7 +42,9 @@
                             Spacer()
                         }
                         
-                        Slider(value: .constant(15.0),
+                        // The syntax of $ styao use this propert (radius) and BIND IT to this control.
+                        // To "bind" means
+                        Slider(value: $radius,
                                in: 0.0...100.0,
                                label: {
                             Text("Radius")

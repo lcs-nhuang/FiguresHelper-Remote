@@ -9,9 +9,10 @@ import SwiftUI
 
 struct TrapezoidView: View {
     
-    @state var a : Double = 15
-    @state var b : Double = 15
-    @state var h : Double = 15
+    @State var a : Double = 15.0
+    @State var b : Double = 15.0
+    @State var h : Double = 15.0
+    
     var area : Double {
         return (a + b) * h * 0.5
     }
@@ -30,7 +31,7 @@ struct TrapezoidView: View {
                     Spacer()
                 }
                 
-                Slider(value: .constant(50.0),
+                Slider(value: $a,
                        in: 0.0...100.0,
                        label: {
                             Text("Opacity")
@@ -56,7 +57,7 @@ struct TrapezoidView: View {
                      Spacer()
                  }
                  
-                 Slider(value: .constant(50.0),
+                 Slider(value: $b,
                         in: 0.0...100.0,
                         label: {
                              Text("Opacity")
@@ -82,7 +83,7 @@ struct TrapezoidView: View {
                      Spacer()
                  }
                  
-                 Slider(value: .constant(50.0),
+                 Slider(value: $h,
                         in: 0.0...100.0,
                         label: {
                              Text("Opacity")
@@ -98,7 +99,7 @@ struct TrapezoidView: View {
             Text("Area")
                 .bold()
             
-            Text("760 Square Units")
+            Text("\(area) square units")
             
             
           

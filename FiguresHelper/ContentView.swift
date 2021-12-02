@@ -11,10 +11,8 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading,spacing: 15){
             
-            Text("Circle")
-                .font(.title)
-            
             Text("Radius")
+                .bold()
             
             HStack{
                 Spacer()
@@ -37,15 +35,18 @@ struct ContentView: View {
             
             Text("Area")
             
-            Text("YOU")
+            Text("7.89 square units")
             
        Spacer()
         }
+        navigationTitle("Circle")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+        NavigationView{
         ContentView()
+        }
     }
 }

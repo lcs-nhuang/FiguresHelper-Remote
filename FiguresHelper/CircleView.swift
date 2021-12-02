@@ -10,12 +10,17 @@
         struct CircleView: View {
             
             //MARK: Stored Properties
-            //radius is the name
-            //Double is the data type
-            //By adding = 15.00 we are just providing a default value
+            //"Radius" is the name
+            //"Double" is the data type
+            //By adding = 15.00 we are just providing a default value.
             // Input - we need this from the user
             //We want SwiftUI to update the user interface based on  what the user selects.
-            //To do this, we use a special piece
+            //To do this, we use a special piece of synyex
+            //Called a "property wrapper"
+            //
+            //@State
+            //
+            //This marks the property as being one that SwiftUI should "watch" for changes
             @State var radius: Double = 15.00
             
             //MARK: Computer properties
@@ -46,6 +51,7 @@
                         // To "bind" means
                         Slider(value: $radius,
                                in: 0.0...100.0,
+                               // step: 1.0, Get 1 more when s
                                label: {
                             Text("Radius")
                         },
